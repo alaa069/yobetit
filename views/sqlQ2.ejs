@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="scotchSQL">
+<head>
+	<meta charset="utf-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<meta name="description" content="">
+	
+	<meta name="author" content="Alaa Ben Jaballah">
+	
+	<!-- <link rel="icon" href="images/favicon.ico">
+	
+	<title>Medialoot Bootstrap 4 Dashboard Template</title> -->
+
+    <!-- Bootstrap core CSS -->
+    <link href="/template/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link href="/template/css/font-awesome.css" rel="stylesheet">
+    
+    <!-- Custom styles for this template -->
+	<link href="/template/css/style.css" rel="stylesheet">
+
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script><!-- load angular -->
+	
+	<script src="js/controllers/sqlQ2Controller.js"></script> <!-- load up our controller -->
+    <script src="js/services/sqlQ2Service.js"></script> <!-- load our service -->
+    <script src="js/core.js"></script> <!-- load our main application -->
+
+</head>
+<body ng-controller="mainController">
+	<div class="container-fluid" id="wrapper">
+		<div class="row">
+			<nav class="sidebar col-xs-12 col-sm-4 col-lg-3 col-xl-2 bg-faded sidebar-style-1">
+				<h1 class="site-title"><a href="/"><img src="/images/yobetit.png" style="margin-left: 32%;"></a></h1>
+				
+				<a href="#menu-toggle" class="btn btn-default" id="menu-toggle"><em class="fa fa-bars"></em></a>
+				
+
+				<ul class="nav nav-pills flex-column sidebar-nav">
+					<h3 class=""></em> Node Js</h3>
+					<li class="nav-item"><a class="nav-link" href="/"><em class="fa fa-question-circle"></em> Question 1: <span class="sr-only">(current)</span></a></li>
+					<li class="nav-item"><a class="nav-link" href="/nodeQ2"><em class="fa fa-question-circle"></em> Question 2:</a></li>
+					<li class="nav-item"><a class="nav-link" href="/nodeQ3"><em class="fa fa-question-circle"></em> Question 3:</a></li>
+					<li class="nav-item"><a class="nav-link" href="/nodeQ4"><em class="fa fa-question-circle"></em> Question 4:</a></li>
+					<h3 class=""></em> SQL</h3>
+					<li class="nav-item"><a class="nav-link" href="/sqlQ1"><em class="fa fa-question-circle"></em> Question 1:</a></li>
+					<li class="nav-item"><a class="nav-link active" href="/sqlQ2"><em class="fa fa-question-circle"></em> Question 2:</a></li>
+				</ul>
+				
+            </nav>
+			
+			<main class="col-xs-12 col-sm-8 offset-sm-4 col-lg-9 offset-lg-3 col-xl-10 offset-xl-2 pt-3 pl-4">
+				<header class="page-header row justify-center header-display">
+					<div class="col-md-6 col-lg-8" >
+						<h1 class="float-left text-center text-md-left">SQL Question 2:</h1>
+					</div>
+				</header>
+				
+				<section class="row">
+					<div class="col-sm-12">
+						<section class="row">
+							<div class="col-md-12 col-lg-12">
+								<h1>Import SQL : <a href="/images/yobetitDB.sql">public/images/yobetitDB.sql</a> OR /models/yobetitDB.sql</h1>
+								<strong>SELECT</strong> * <strong>FROM</strong> Players P <strong>WHERE</strong> P.ID_player <strong>IN</strong> <br>
+								(<strong>SELECT</strong> ID_player from Favorite <strong>INNER JOIN</strong> Games <strong>ON</strong> Favorite.ID_game = Games.ID_game <strong>WHERE</strong> Games.type_game = "SLOT")
+								<br>
+								<div class="jumbotron text-center">
+									<h1>
+										<table  class="table" >
+											<thead>
+												<th>ID player</th>
+												<th>Name</th>
+											</thead>
+											<tbody ng-repeat="result in dataBase">
+												<td>{{ result.ID_player }}</td>
+												<td>{{ result.Name }}</td>
+											</tbody>
+										</table>
+									</h1>
+									<form>
+					
+										<button type="submit" class="btn btn-primary btn-lg" ng-click="DataBase()">Get Player</button>
+									</form>
+								</div>
+							</div>
+						</section>
+						<section class="row">
+							<div class="col-12 mt-1 mb-4">&copy; <script>document.write(new Date().getFullYear())</script>, made with <i class="fa fa-heart heart"></i> by <a href="#">Alaa BEN JABALLAH</a></div>
+						</section>
+					</div>
+				</section>
+			</main>
+		</div>
+	</div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/template/js/jquery-3.2.1.min.js"></script>
+    <script src="/template/dist/js/bootstrap.min.js"></script>
+    
+
+    <script src="/template/js/bootstrap-datepicker.js"></script>
+
+
+    
+
+    
+	  </body>
+</html>

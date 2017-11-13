@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<meta name="description" content="">
+
+	<meta name="author" content="Alaa Ben Jaballah">
+
+	<!-- <link rel="icon" href="images/favicon.ico">
+	
+	<title>Medialoot Bootstrap 4 Dashboard Template</title> -->
+
+	<!-- Bootstrap core CSS -->
+	<link href="/template/dist/css/bootstrap.min.css" rel="stylesheet">
+
+	<!--Fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+	<!-- Icons -->
+	<link href="/template/css/font-awesome.css" rel="stylesheet">
+
+	<!-- Custom styles for this template -->
+	<link href="/template/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+	<div class="container-fluid" id="wrapper">
+		<div class="row">
+			<nav class="sidebar col-xs-12 col-sm-4 col-lg-3 col-xl-2 bg-faded sidebar-style-1">
+				<h1 class="site-title"><a href="/"><img src="/images/yobetit.png" style="margin-left: 32%;"></a></h1>
+
+				<a href="#menu-toggle" class="btn btn-default" id="menu-toggle"><em class="fa fa-bars"></em></a>
+
+
+				<ul class="nav nav-pills flex-column sidebar-nav">
+					<h3 class="">Node Js</h3>
+					<li class="nav-item"><a class="nav-link" href="/"><em class="fa fa-question-circle"></em> Question 1: <span class="sr-only">(current)</span></a></li>
+					<li class="nav-item"><a class="nav-link" href="/nodeQ2"><em class="fa fa-question-circle"></em> Question 2:</a></li>
+					<li class="nav-item"><a class="nav-link" href="/nodeQ3"><em class="fa fa-question-circle"></em> Question 3:</a></li>
+					<li class="nav-item"><a class="nav-link" href="/nodeQ4"><em class="fa fa-question-circle"></em> Question 4:</a></li>
+					<h3 class="">SQL</h3>
+					<li class="nav-item"><a class="nav-link active" href="/sqlQ1"><em class="fa fa-question-circle"></em> Question 1:</a></li>
+					<li class="nav-item"><a class="nav-link" href="/sqlQ2"><em class="fa fa-question-circle"></em> Question 2:</a></li>
+				</ul>
+
+			</nav>
+
+			<main class="col-xs-12 col-sm-8 offset-sm-4 col-lg-9 offset-lg-3 col-xl-10 offset-xl-2 pt-3 pl-4">
+				<header class="page-header row justify-center header-display">
+					<div class="col-md-6 col-lg-8">
+						<h1 class="float-left text-center text-md-left">SQL Question 1:</h1>
+					</div>
+				</header>
+
+				<section class="row">
+					<div class="col-sm-12">
+						<section class="row">
+							<div class="col-md-12 col-lg-6">
+								<h3 class="main-header">yobetit - database model documentation</h3>
+								<div class="generalInfo">
+									<p class="infoField"><strong>Database engine:</strong> MySQL </p>
+									<p class="infoField"><strong>Version:</strong> 4.7.2 </p>
+								</div>
+								<div >
+									<h3>1. Tables</h3>
+									<h4>1.1. Table Casino</h4>
+									<h5>1.1.1. Columns</h5>
+									<table class="table">
+										<thead>
+											<tr>
+												<th>Column name</th>
+												<th>Type</th>
+												<th>Properties</th>
+												<th>Description</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>ID_casino</td>
+												<td>int</td>
+												<td>PK</td>
+												<td></td>
+											</tr>
+										</tbody>
+									</table>
+									<h4>1.2. Table Games</h4>
+									<h5>1.2.1. Columns</h5>
+									<table class="table">
+										<thead>
+											<tr>
+												<th>Column name</th>
+												<th>Type</th>
+												<th>Properties</th>
+												<th>Description</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>ID_game</td>
+												<td>int</td>
+												<td>PK</td>
+												<td></td>
+											</tr>
+											<tr>
+												<td>type_game</td>
+												<td>varchar(50)</td>
+												<td></td>
+												<td></td>
+											</tr>
+											<tr>
+												<td>ID_casion</td>
+												<td>int</td>
+												<td></td>
+												<td></td>
+											</tr>
+											<tr>
+												<td>ID_country</td>
+												<td>int</td>
+												<td></td>
+												<td></td>
+											</tr>
+										</tbody>
+									</table>
+									<h4>1.3. Table Players</h4>
+									<h5>1.3.1. Columns</h5>
+									<table class="table">
+										<thead>
+											<tr>
+												<th>Column name</th>
+												<th>Type</th>
+												<th>Properties</th>
+												<th>Description</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>ID_player</td>
+												<td>int</td>
+												<td>PK</td>
+												<td></td>
+											</tr>
+										</tbody>
+									</table>
+									<h4>1.4. Table Countries</h4>
+									<h5>1.4.1. Columns</h5>
+									<table class="table">
+										<thead>
+											<tr>
+												<th>Column name</th>
+												<th>Type</th>
+												<th>Properties</th>
+												<th>Description</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>ID_country</td>
+												<td>int</td>
+												<td>PK</td>
+												<td></td>
+											</tr>
+										</tbody>
+									</table>
+									<h4>1.5. Table Favorite</h4>
+									<h5>1.5.1. Columns</h5>
+									<table class="table">
+										<thead>
+											<tr>
+												<th>Column name</th>
+												<th>Type</th>
+												<th>Properties</th>
+												<th>Description</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>ID_game</td>
+												<td>int</td>
+												<td>PK</td>
+												<td></td>
+											</tr>
+											<tr>
+												<td>ID_player</td>
+												<td>int</td>
+												<td>PK</td>
+												<td></td>
+											</tr>
+										</tbody>
+									</table>
+									<h4>1.6. Table Designation</h4>
+									<h5>1.6.1. Columns</h5>
+									<table class="table">
+										<thead>
+											<tr>
+												<th>Column name</th>
+												<th>Type</th>
+												<th>Properties</th>
+												<th>Description</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>ID_player</td>
+												<td>int</td>
+												<td>PK</td>
+												<td></td>
+											</tr>
+											<tr>
+												<td>ID_country</td>
+												<td>int</td>
+												<td>PK</td>
+												<td></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div>
+									<h3>2. Reference</h3>
+									<h4>2.1. Reference Games_Casino</h4>
+									<h5>2.1.1. Columns</h5>
+									<table class="table">
+										<tr>
+											<td>Casino</td>
+											<td>1..* </td>
+											<td>Games</td>
+										</tr>
+										<tr>
+											<td>ID_casino </td>
+											<td><-></td>
+											<td>ID_casion </td>
+										</tr>
+									</table>
+									<h4>2.2. Reference Games_Countries </h4>
+									<h5>2.2.1. Columns </h5>
+									<table class="table">
+										<tr>
+											<td>Countries</td>
+											<td>1..* </td>
+											<td>Games</td>
+										</tr>
+										<tr>
+											<td>ID_country</td>
+											<td><-></td>
+											<td>ID_country </td>
+										</tr>
+									</table>
+									<h4>2.3. Reference Favorite_Players </h4>
+									<h5>2.3.1. Columns </h5>
+									<table class="table">
+										<tr>
+											<td>Players</td>
+											<td>1..* </td>
+											<td>Favorite</td>
+										</tr>
+										<tr>
+											<td>ID_player </td>
+											<td><-></td>
+											<td>ID_player </td>
+										</tr>
+									</table>
+									<h4>2.4. Reference Games_Favorite </h4>
+									<h5>2.4.1. Columns </h5>
+									<table class="table">
+										<tr>
+											<td>Games</td>
+											<td>1..* </td>
+											<td>Favorite</td>
+										</tr>
+										<tr>
+											<td>ID_game </td>
+											<td><-></td>
+											<td>ID_game </td>
+										</tr>
+									</table>
+									<h4>2.5. Reference Designation_Players </h4>
+									<h5>2.5.1. Columns </h5>
+									<table class="table">
+										<tr>
+											<td>Players</td>
+											<td>1..* </td>
+											<td>Designation</td>
+										</tr>
+										<tr>
+											<td>ID_player </td>
+											<td><-></td>
+											<td>ID_player </td>
+										</tr>
+									</table>
+									<h4>2.6. Reference Countries_Designation </h4>
+									<h5>2.6.1. Columns </h5>
+									<table class="table">
+										<tr>
+											<td>Countries</td>
+											<td>1..* </td>
+											<td>Designation</td>
+										</tr>
+										<tr>
+											<td>ID_country </td>
+											<td><-></td>
+											<td>ID_country </td>
+										</tr>
+									</table>
+								</div>
+							</div>
+
+							<div class="col-md-12 col-lg-6">
+								<h3 class="">Schema :</h3>
+								<img src="/images/sqlSHEMA.png">
+								<h3 class="">SQL :</h3>
+								<div>
+										-- tables<br>
+										-- Table: Casino<br>
+										CREATE TABLE Casino (<br>
+											ID_casino int NOT NULL AUTO_INCREMENT,<br>
+											CONSTRAINT Casino_pk PRIMARY KEY (ID_casino)<br>
+										);<br>
+										<br>
+										-- Table: Countries<br>
+										CREATE TABLE Countries (<br>
+											ID_country int NOT NULL AUTO_INCREMENT,<br>
+											CONSTRAINT Countries_pk PRIMARY KEY (ID_country)<br>
+										);<br>
+										<br>
+										-- Table: Designation<br>
+										CREATE TABLE Designation (<br>
+											ID_player int NOT NULL,<br>
+											ID_country int NOT NULL,<br>
+											CONSTRAINT Designation_pk PRIMARY KEY (ID_player,ID_country)<br>
+										);<br>
+										<br>
+										-- Table: Favorite<br>
+										CREATE TABLE Favorite (<br>
+											ID_game int NOT NULL,<br>
+											ID_player int NOT NULL,<br>
+											CONSTRAINT Favorite_pk PRIMARY KEY (ID_game,ID_player)<br>
+										);<br>
+										<br>
+										-- Table: Games<br>
+										CREATE TABLE Games (<br>
+											ID_game int NOT NULL AUTO_INCREMENT,<br>
+											type_game varchar(50) NOT NULL,<br>
+											ID_casion int NOT NULL,<br>
+											ID_country int NOT NULL,<br>
+											CONSTRAINT Games_pk PRIMARY KEY (ID_game)<br>
+										);<br>
+										<br>
+										-- Table: Players<br>
+										CREATE TABLE Players (<br>
+											ID_player int NOT NULL AUTO_INCREMENT,<br>
+											CONSTRAINT Players_pk PRIMARY KEY (ID_player)<br>
+										);<br>
+										<br>
+										-- foreign keys<br>
+										-- Reference: Countries_Designation (table: Designation)<br>
+										ALTER TABLE Designation ADD CONSTRAINT Countries_Designation FOREIGN KEY Countries_Designation (ID_country)<br>
+											REFERENCES Countries (ID_country);<br>
+											<br>
+										-- Reference: Designation_Players (table: Designation)
+										ALTER TABLE Designation ADD CONSTRAINT Designation_Players FOREIGN KEY Designation_Players (ID_player)<br>
+											REFERENCES Players (ID_player);<br>
+											<br>
+										-- Reference: Favorite_Players (table: Favorite)<br>
+										ALTER TABLE Favorite ADD CONSTRAINT Favorite_Players FOREIGN KEY Favorite_Players (ID_player)<br>
+											REFERENCES Players (ID_player);<br>
+											<br>
+										-- Reference: Games_Casino (table: Games)<br>
+										ALTER TABLE Games ADD CONSTRAINT Games_Casino FOREIGN KEY Games_Casino (ID_casion)<br>
+											REFERENCES Casino (ID_casino);<br>
+											<br>
+										-- Reference: Games_Countries (table: Games)<br>
+										ALTER TABLE Games ADD CONSTRAINT Games_Countries FOREIGN KEY Games_Countries (ID_country)<br>
+											REFERENCES Countries (ID_country);<br>
+											<br>
+										-- Reference: Games_Favorite (table: Favorite)<br>
+										ALTER TABLE Favorite ADD CONSTRAINT Games_Favorite FOREIGN KEY Games_Favorite (ID_game)<br>
+											REFERENCES Games (ID_game);<br>
+								</div>
+							</div>
+						</section>
+						<section class="row">
+							<div class="col-12 mt-1 mb-4">&copy;
+								<script>
+									document.write(new Date().getFullYear())
+								</script>, made with <i class="fa fa-heart heart"></i> by <a href="#">Alaa BEN JABALLAH</a></div>
+						</section>
+					</div>
+				</section>
+			</main>
+		</div>
+	</div>
+
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="/template/js/jquery-3.2.1.min.js"></script>
+	<script src="/template/dist/js/bootstrap.min.js"></script>
+
+
+	<script src="/template/js/bootstrap-datepicker.js"></script>
+
+</body>
+
+</html>

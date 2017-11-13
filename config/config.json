@@ -1,0 +1,16 @@
+{
+    "development": {
+        "hostDataBase"      : "localhost",
+        "userDataBase"      : "root",
+        "passDataBase"      : "root",
+        "nameDataBase"      : "yobetit",
+        "serverPort"        : 2222
+    },
+    "production": {
+        "hostDataBase"      : "localhost",
+        "userDataBase"      : "root",
+        "passDataBase"      : "root",
+        "nameDataBase"      : "yobetit",
+        "serverPort"        : 2222
+    }
+}
